@@ -5,7 +5,7 @@ import { categories } from "@/data/categories";
 
 export function ProductCategoriesGrid() {
   return (
-    <BentoGrid className="max-w-7xl mx-auto md:grid-cols-2">
+    <BentoGrid className="md:grid-cols-2">
       {categories.map((category, i) => (
         <BentoGridItem
           key={i}

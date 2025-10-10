@@ -14,7 +14,7 @@ export function Section({
   return (
     <section className="w-full">
       {/* Header */}
-      <div className="mb-4 flex items-center justify-between">
+      <div className="mb-4 flex items-center justify-between max-w-7xl mx-auto">
         <h2 className="text-3xl  tracking-tight md:text-4xl">{title}</h2>
         <Link
           href={viewAllHref}
@@ -25,9 +25,10 @@ export function Section({
         </Link>
       </div>
 
-      <ScrollArea className="w-full  whitespace-nowrap">
-        <div className="flex w-max space-x-4">{children}</div>
-        <ScrollBar orientation="horizontal" />
+      {/* Scrollable cards */}
+      <ScrollArea className="w-full whitespace-nowrap">
+        <div className="flex w-max space-x-4 mb-4">{children}</div>
+        <ScrollBar orientation="horizontal" className="h-1.5" />
       </ScrollArea>
     </section>
   );
