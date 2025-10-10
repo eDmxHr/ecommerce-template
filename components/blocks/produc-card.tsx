@@ -21,10 +21,10 @@ interface ProductCardProps {
 
 export function ProductCard({ product }: ProductCardProps) {
   return (
-    <Card className="relative flex-shrink-0 overflow-hidden w-72">
+    <Card className="relative flex-shrink-0 overflow-hidden w-full">
       <CardContent className="p-0">
         {/* Image Container */}
-        <div className="relative aspect-square max-h-72 overflow-hidden">
+        <div className="relative aspect-square  overflow-hidden">
           {/* Product Image */}
           <Image
             src={product.image || "/placeholder.svg"}
@@ -36,10 +36,10 @@ export function ProductCard({ product }: ProductCardProps) {
 
         {/* Product Info */}
         <div className="p-4 space-y-1">
-          <h3 className="line-clamp-2 text-base font-medium leading-snug text-foreground">
+          <h3 className="line-clamp-2 text-xl md:text-base font-medium leading-snug text-foreground">
             {product.name}
           </h3>
-          <p className="text-foreground">
+          <p className="text-foreground text-lg md:text-base">
             {product.currency} {product.price}
           </p>
         </div>

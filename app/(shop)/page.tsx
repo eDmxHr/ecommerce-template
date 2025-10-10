@@ -7,12 +7,14 @@ import { ProductCategoriesGrid } from "@/components/blocks/categories-grid";
 
 export default function Home() {
   return (
-    <main className="p-4 space-y-15">
+    <main className="p-4 space-y-15 max-w-4xl mx-auto">
       <ProductCategoriesGrid />
 
       <Section title="Best Sellers">
         {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <div key={product.id} className="w-72">
+            <ProductCard product={product} />
+          </div>
         ))}
       </Section>
 
