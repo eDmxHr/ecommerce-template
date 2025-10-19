@@ -28,7 +28,7 @@ const navigation = {
 export default function Footer() {
   return (
     <footer className="bg-black">
-      <div className="px-4 pb-4 pt-8 mx-auto container">
+      <div className="px-4 pb-4 pt-8 mx-auto container ">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-left text-white pb-8">
           <div className="p-2 space-y-4">
             <h6 className="font-semibold text-xl">Ecommerce Platform</h6>
