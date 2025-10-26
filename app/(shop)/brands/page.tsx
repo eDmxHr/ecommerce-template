@@ -1,3 +1,4 @@
+import Header from "@/components/header";
 import PageWrapper from "@/components/page-wrapper";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { brands } from "@/data/brands";
@@ -7,7 +8,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <PageWrapper>
-      <h1 className="text-5xl mx-auto font-medium py-10">Brands</h1>
+      <Header title="Brands" />
       <BentoGrid>
         {brands.map((brand, i) => (
           <BentoGridItem

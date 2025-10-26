@@ -18,10 +18,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <Spin toggled={isOpen} toggle={setOpen} />
           </div>
-          <Store
-            className="w-8 h-8 text-primary hidden md:block"
-            strokeWidth={1.5}
-          />
+          <Store className="w-8 h-8 text-primary hidden md:block" />
         </div>
 
         {/* Navigation Links */}
@@ -72,7 +69,7 @@ export default function Navbar() {
         <SheetContent className="w-[300px] sm:w-[400px]" side="left">
           <SheetHeader>
             <SheetTitle className="text-left text-3xl font-bold text-black mb-8">
-              <StoreIcon className="w-8 h-8 text-primary" strokeWidth={1.5} />
+              <StoreIcon className="w-8 h-8 text-primary" />
             </SheetTitle>
           </SheetHeader>
 
